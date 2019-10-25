@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="model.Cart" table="cart">
+		<id name="idcart" column="idcart">
+			<generator class="increment" />
+		</id>
+		<property name="unamecart" column="unamecart"/>
+		<property name="itemname" column="itemname"/>
+	</class>
+</hibernate-mapping>
